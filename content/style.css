@@ -1,0 +1,208 @@
+html,body{
+    background-color: rebeccapurple;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans"
+}
+.login-container{
+    padding: 15px 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.active{
+    background-color: rebeccapurple;
+    color: white
+}
+button{
+    width: 160px;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 16px;
+}
+.btn-login{
+    border: 1px solid white;
+    background-color: white;
+    color: rebeccapurple;
+    transition: all ease-in-out 0.2s;
+}
+.btn-login:hover{
+    border: 1px solid white;
+    background-color: rebeccapurple;
+    color: white;
+}
+h2{
+    padding: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: rebeccapurple;
+}
+form{
+    position: absolute;
+    top: 0;
+    background-color: white;
+    border-radius: 15px;
+    padding-bottom: 15px;
+}
+.login-form{
+    transition: all ease-in-out 0.5s;
+    width: 0px;
+    opacity: 0;
+}
+
+.register-form{
+    transition: all ease-in-out 0.5s;
+    width: 490px;
+    opacity: 1;
+}
+.container{
+    overflow: hidden;
+    padding-top: 150px;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    border: 1px solid rebeccapurple;
+    background-color: #69389a;
+    height: 100vh;
+    display: flex;
+    align-items: normal;
+    align-content: center;
+    justify-content: center;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.form-visible{
+    left:0;
+    opacity: 1;
+    /* transform: scale3d(1, 1, 1) */
+}
+.form-invisible{
+    right: 0;
+    opacity: 1;
+    /* transform: scale3d(1.2, 1.2, 0.3) */
+}
+.form-container{
+    width:100%;
+    position: relative;
+}
+.inputs{
+    width: 92%;
+    padding: 10px;
+    padding-right: 0;
+    border-radius: 25px;
+    border: 1px solid rebeccapurple;
+    font-size: 16px;
+    color: rebeccapurple;
+}
+input:focus{
+    outline: none;
+    border: 2px solid rebeccapurple;
+}
+
+label{
+    text-align: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-container{
+    margin: 15px 0;
+    padding-left: 15px;
+    color: rebeccapurple;
+    position: relative;
+}
+.submit-container{
+    padding:15px;
+    text-align: center;
+    color: rebeccapurple;
+}
+.submit{
+    background-color: white;
+    width: 50%;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid rebeccapurple;
+    color: rebeccapurple;
+    transition: all ease-in-out 0.2s;
+}
+.submit:hover{
+    background-color: rebeccapurple;
+    color: white;
+    border: 1px solid rebeccapurple;
+}
+.shake{
+    animation: shake-animation 4.72s ease-in-out;
+    transform-origin: 50% 50%;
+}
+.danger{
+    border-bottom: 2px solid red;
+}
+.fade.out{
+    transition: all ease-in-out 0.2s;
+    opacity: 0;
+}
+.confirm{
+    font-size: 150px;
+    color: white;
+}
+.bg-image{
+    overflow: hidden;
+    width: 420px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    transform: translateX(-65%);
+    z-index: 99;
+    background: linear-gradient(90deg, rebeccapurple 0%, rgb(125, 125, 175) 35%, #ffffff 100%);
+    transition: all ease-in-out 0.5s;
+}
+.bg-image.anim{
+    transform: translateX(65%);
+    background: linear-gradient(90deg, #ffffff 0%, rgb(125, 125, 175) 35%, rebeccapurple 100%);
+}
+.bg-image img{
+    height: 100vh;
+    top: 0;
+    left: -60%;
+    position: absolute;
+    transition: all ease-in-out 0.5s;
+}
+.confirm-start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 26px;
+    position: absolute;
+    color: white;
+    top: -350px;
+    left: 33%;
+    opacity:0;
+    transition: all ease-in-out  1.5s;
+}
+.confirm-start.confirm-end{
+    top: 0px;
+    opacity: 1;
+    z-index: 9;
+}
+@keyframes shake-animation {
+    0% { transform:translate(0,0) }
+   1.78571% { transform:translate(5px,0) }
+   3.57143% { transform:translate(0,0) }
+   5.35714% { transform:translate(5px,0) }
+   7.14286% { transform:translate(0,0) }
+   8.92857% { transform:translate(5px,0) }
+   10.71429% { transform:translate(0,0) }
+   100% { transform:translate(0,0) }
+ }
