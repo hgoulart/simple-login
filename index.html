@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="content/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="content/fontawesome/css/all.css" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="bg-image anim">
+            <img src="content/img/bg-image.jpg" alt="" id="bg-image">
+        </div>
+        <div class="login-container">
+            <button class="btn-login login" id="login" onclick="login()"><strong>Login</strong></button>
+            <button class="btn-login cadastro" id="cadastro" onclick="cadastro()"><strong>Cadastrar</strong></button>
+        </div>
+        <div class="form-container">
+            <div class="confirm-start">
+                <strong>Sucesso!</strong>
+                <i class="fas fa-check confirm"></i>
+            </div>
+
+            <form class="login-form form-invisible">
+                <h2 class="fade">Login</h2>
+                <div class="input-container fade">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" value="" class="inputs input-login">
+                </div>
+                <div class="input-container fade">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" value="" class="inputs input-login">
+                </div>
+                <div class="submit-container fade">
+                    <input type="button" value="Entrar" class="submit" onclick="confirm('login-form')">
+                </div>
+                
+            </form>
+
+            <form class="register-form form-visible">
+                <h2 class="fade">Cadastro</h2>
+                <div class="input-container fade">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="inputs input-register">
+                </div>
+                <div class="input-container fade">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" value="" class="inputs input-register">
+                </div>
+                <div class="input-container fade">
+                    <label for="senha">Confirmar Senha:</label>
+                    <input type="password" id="senha" name="senha" value="" class="inputs input-register">
+                </div>
+                <div class="submit-container fade">
+                    <input type="button" value="Entrar" class="submit" onclick="confirm('register-form')">
+                </div>
+                
+            </form>
+        </div>
+
+    </section>
+    <script src="content/script.js"></script>
+</body>
+
+</html>
